@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: fit-content;
+  font-size: 20px;
+}
+
+.container_header {
+  display: flex;
+  background-color: #ccc;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.main {
+  padding: 10px;
+  margin: 0 auto;
+  background: conic-gradient(
+      from 90deg at 1px 1px,
+      rgb(255, 255, 255) 90deg,
+      rgba(192, 192, 192) 0
+    )
+    0px 0px/17px 17px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: rgb(158, 158, 158);
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.product_widget {
+  border: 1px solid #000;
+  padding: 10px;
+  background: rgb(248, 248, 248);
+}
+
+button {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+}
+
+button:hover {
+  color: blue;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+}
+
+#plus_btn {
+  font-size: 20px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  max-height: fit-content;
+  border: 1px solid #000;
+  padding: 15px;
+  font-size: 18px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.modal_name,
+.modal_price {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.modal_input,
+.modal_btns > button {
+  border-radius: 8px;
+  border: 1px solid #000;
+  padding: 4px;
+}
+
+.modal_btns {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
